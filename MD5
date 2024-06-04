@@ -1,6 +1,6 @@
-2c47f66785cb23bbf187884b23a8bcb5 *DESCRIPTION
+9a9d9088d3b585a77c4d6bda4fc8128d *DESCRIPTION
 b1ce2403d9a0258f36e54516d8f70434 *NAMESPACE
-139e9a173f220db612c8efadc13f9424 *NEWS.md
+8b8ef56873919ae41ece46afecbb33cd *NEWS.md
 f35b3742216568df3b4b013ab70fc5f4 *R/ansari.bradley.R
 1b0849dea24932e669feca3d49e6cdc2 *R/binom.R
 7dd8f8a005082306753b390f581089fd *R/blomqvist.R
@@ -40,7 +40,7 @@ fd2d3daa5b4339ad32c77e0822d74b10 *R/moses.extreme.reactions.R
 ea41aebbcb2fedc1dc8d9c1063db2d3a *R/noether.R
 a8c930ba720a7b6cfa433b35a6f3c43a *R/normal.scores.test.R
 6c2dfe4cd0b3bc8b59406502464b525c *R/oddsratio.2x2diff.R
-28bb58419d9be1917239b71adaa1b4d5 *R/pearson.R
+7d0b194827e86d53218d832fc92793d7 *R/pearson.R
 8384ba8044c17271aa62a851db1cdecd *R/pearson.beta.R
 2ebeec0a52ef016eb3f78a5081a4ed02 *R/perms.R
 41f5f52d18c4ef26d09b43a130e63f9b *R/peto.wilcoxon.R
@@ -181,8 +181,8 @@ e12e632153c0bb61f311516604915854 *tests/testthat/test-mood.R
 d92682c03f809f3abefc43652301d08c *tests/testthat/test-noether.R
 f97264cbb3b0d4e1899ce6ad23913e0b *tests/testthat/test-normal.scores.test.R
 c19c262bfda0b3c5ff765f0a69fade9c *tests/testthat/test-oddsratio.2x2diff.R
-3293b5fcb7893ca163c6d8330ad80994 *tests/testthat/test-pearson.R
-10df17b2fe7615ebaa4ee2bf0ea9f4cb *tests/testthat/test-pearson.beta.R
+d3972e22e13f830808037e1342567784 *tests/testthat/test-pearson.R
+b31204c5fc64f6032592eb90409656a8 *tests/testthat/test-pearson.beta.R
 58f9b4a225f81a5412d9b3c579394461 *tests/testthat/test-peto.wilcoxon.R
 f01b75739946d20102878bbf02b3f0fd *tests/testthat/test-pitman.R
 555b5bf04b1b0873bbd173e9155a57f5 *tests/testthat/test-rng.test.R

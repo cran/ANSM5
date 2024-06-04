@@ -79,6 +79,7 @@ pearson <-
     y <- round(y, -floor(log10(sqrt(.Machine$double.eps)))) #handle floating point issues
     n <- length(x)
     stat <- cor(x, y, method = "pearson")
+    stat <- round(stat, -floor(log10(sqrt(.Machine$double.eps)))) #handle floating point issues
     statlabel <- "Pearson correlation"
 
     #give mc output if exact not possible
@@ -93,6 +94,7 @@ pearson <-
       pval.exact <- 0
       for (i in 1:n.perms){
         cor.tmp <- cor(x[permutations[i,]], y, method = "pearson")
+        cor.tmp <- round(cor.tmp, -floor(log10(sqrt(.Machine$double.eps)))) #handle floating point issues
         if (alternative == "two.sided"){
           if (abs(cor.tmp) >= abs(stat)){
             pval.exact <- pval.exact + 1 / n.perms
