@@ -1,8 +1,8 @@
 test_that("Example 10.8", {
-  expect_equal(kendall.tau(ch10$death.year, ch10$age.at.death,
+  expect_equal(kendall.tau(ch10$death.year, app1$McDelta,
                            alternative = "greater", do.asymp = TRUE,
                            do.exact = FALSE)$stat, 0.38964325)
-  expect_equal(kendall.tau(ch10$death.year, ch10$age.at.death,
+  expect_equal(kendall.tau(ch10$death.year, app1$McDelta,
                            alternative = "greater", do.asymp = TRUE,
                            do.exact = FALSE)$pval.asymp, 0.03309629)
 })

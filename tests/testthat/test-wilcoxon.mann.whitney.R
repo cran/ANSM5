@@ -21,10 +21,10 @@ test_that("Example 6.3", {
 })
 
 test_that("Example 6.6", {
-  expect_equal(wilcoxon.mann.whitney(ch6$McGamma, ch6$McBeta,
+  expect_equal(wilcoxon.mann.whitney(app1$McGamma, app1$McBeta,
                                      do.exact = FALSE, do.asymp = TRUE,
                                      cont.corr = FALSE)$pval.asymp, 0.41896844)
-  expect_equal(wilcoxon.mann.whitney(ch6$McGamma, ch6$McBeta,
+  expect_equal(wilcoxon.mann.whitney(app1$McGamma, app1$McBeta,
                                      do.exact = FALSE,
                                      do.asymp = TRUE)$pval.asymp, 0.425550392)
 })

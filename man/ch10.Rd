@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{ch10}}{
 
-A list with 27 data vectors
+A list with 26 data vectors
 }
 }
 \source{
@@ -22,7 +22,6 @@ Data used in Chapter 10 of "Applied Nonparametric Statistical Methods" (5th edit
 \item q1 (used in section 10.1.2, examples 10.2, 10.5, 10.9)
 \item q2 (used in section 10.1.2, examples 10.2, 10.5, 10.9)
 \item death.year (used in examples 10.4, 10.8)
-\item age.at.death (used in examples 10.4, 10.8, exercise 10.5)
 \item diving.rank (used in example 10.10)
 \item competitors (used in example 10.10)
 \item judges (used in example 10.10)

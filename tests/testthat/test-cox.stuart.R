@@ -23,6 +23,6 @@ test_that("Exercise 4.12", {
 })
 
 test_that("Exercise 10.5", {
-  expect_equal(cox.stuart(ch10$age.at.death, alternative = "less")$pval.exact,
+  expect_equal(cox.stuart(app1$McDelta[order(ch10$death.year)], alternative = "less")$pval.exact,
                0.1875)
 })

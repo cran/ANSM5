@@ -41,7 +41,6 @@
 #'
 #' * breaks (used in example 4.2)
 #' * ages (used in example 4.4)
-#' * McAlpha (used in example 4.5)
 #' * precipitation (used in example 4.13)
 #' * tosses1 (used in example 4.14)
 #' * tosses2 (used in example 4.14)
@@ -49,7 +48,6 @@
 #' * births (used in example 4.15)
 #' * times.as.degrees (used in example 4.16)
 #' * dates.as.degrees (used in example 4.17)
-#' * McGamma (used in exercise 4.1)
 #' * waiting.time (used in exercise 4.2)
 #' * visiting.supporters (used in exercise 4.3)
 #' * days.waiting (used in exercise 4.8)
@@ -63,7 +61,7 @@
 #' * football.results (used in exercise 4.17)
 #'
 #' @format ## `ch4`
-#' A list with 22 data vectors
+#' A list with 20 data vectors
 #' @source "Applied Nonparametric Statistical Methods" (5th edition)
 "ch4"
 
@@ -110,8 +108,6 @@
 #' * groupB.sch2 (used in example 6.4)
 #' * groupA.sch2.grp (used in example 6.5)
 #' * groupB.sch2.grp (used in example 6.5)
-#' * McGamma (used in example 6.6)
-#' * McBeta (used in example 6.6)
 #' * males (used in examples 6.7, 6.8)
 #' * females (used in examples 6.7, 6.8)
 #' * sampleI (used in example 6.9)
@@ -147,7 +143,7 @@
 #' * twins (used in exercise 6.17)
 #'
 #' @format ## `ch6`
-#' A list with 41 data vectors
+#' A list with 39 data vectors
 #' @source "Applied Nonparametric Statistical Methods" (5th edition)
 "ch6"
 
@@ -291,7 +287,6 @@
 #' * q1 (used in section 10.1.2, examples 10.2, 10.5, 10.9)
 #' * q2 (used in section 10.1.2, examples 10.2, 10.5, 10.9)
 #' * death.year (used in examples 10.4, 10.8)
-#' * age.at.death (used in examples 10.4, 10.8, exercise 10.5)
 #' * diving.rank (used in example 10.10)
 #' * competitors (used in example 10.10)
 #' * judges (used in example 10.10)
@@ -317,7 +312,7 @@
 #' * observerB (used in exercise 10.12)
 #'
 #' @format ## `ch10`
-#' A list with 27 data vectors
+#' A list with 26 data vectors
 #' @source "Applied Nonparametric Statistical Methods" (5th edition)
 "ch10"
 
@@ -481,3 +476,17 @@
 #' @source "Applied Nonparametric Statistical Methods" (5th edition)
 "ch15"
 
+#' Data in Appendix 1
+#'
+#' @description
+#' Data in Appendix 1 of "Applied Nonparametric Statistical Methods" (5th edition)
+#'
+#' * McAlpha (used in example 4.5)
+#' * McBeta (used in example 6.6)
+#' * McGamma (used in exercise 4.1, example 6.6)
+#' * McDelta (used in examples 10.4, 10.8, exercise 10.5)
+#'
+#' @format ## `app1`
+#' A list with 4 data vectors
+#' @source "Applied Nonparametric Statistical Methods" (5th edition)
+"app1"

@@ -3,7 +3,7 @@ test_that("Example 4.4", {
 })
 
 test_that("Exercise 4.1", {
-  expect_equal(shapirotest.ANSM(ch4$McGamma)$pval.asymp, 0.00039674968)
+  expect_equal(shapirotest.ANSM(app1$McGamma)$pval.asymp, 0.00039674968)
 })
 
 test_that("Exercise 4.3", {

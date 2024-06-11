@@ -1,7 +1,7 @@
 Package: ANSM5
 Title: Functions and Data for the Book "Applied Nonparametric
         Statistical Methods", 5th Edition
-Version: 1.0.1
+Version: 1.1.0
 Authors@R: 
     person("Neil", "Spencer", , "neilhspencer@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-6068-5887"))
@@ -15,8 +15,8 @@ Depends: R (>= 2.10)
 LazyData: true
 License: GPL (>= 3)
 NeedsCompilation: no
-Packaged: 2024-06-03 08:02:02 UTC; soeqnhs
+Packaged: 2024-06-11 12:03:07 UTC; soeqnhs
 Author: Neil Spencer [aut, cre, cph] (<https://orcid.org/0000-0002-6068-5887>)
 Maintainer: Neil Spencer <neilhspencer@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-06-04 09:50:43 UTC
+Date/Publication: 2024-06-11 12:20:12 UTC

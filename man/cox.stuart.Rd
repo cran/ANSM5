@@ -37,6 +37,6 @@ An ANSMtest object with the results from applying the function
 cox.stuart(ch4$precipitation)
 
 # Exercise 10.5 from "Applied Nonparametric Statistical Methods" (5th edition)
-cox.stuart(ch10$age.at.death, alternative = "less")
+cox.stuart(app1$McDelta[order(ch10$death.year)], alternative = "less")
 
 }

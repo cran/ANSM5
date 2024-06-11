@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{ch4}}{
 
-A list with 22 data vectors
+A list with 20 data vectors
 }
 }
 \source{
@@ -21,7 +21,6 @@ Data used in Chapter 4 of "Applied Nonparametric Statistical Methods" (5th editi
 \itemize{
 \item breaks (used in example 4.2)
 \item ages (used in example 4.4)
-\item McAlpha (used in example 4.5)
 \item precipitation (used in example 4.13)
 \item tosses1 (used in example 4.14)
 \item tosses2 (used in example 4.14)
@@ -29,7 +28,6 @@ Data used in Chapter 4 of "Applied Nonparametric Statistical Methods" (5th editi
 \item births (used in example 4.15)
 \item times.as.degrees (used in example 4.16)
 \item dates.as.degrees (used in example 4.17)
-\item McGamma (used in exercise 4.1)
 \item waiting.time (used in exercise 4.2)
 \item visiting.supporters (used in exercise 4.3)
 \item days.waiting (used in exercise 4.8)

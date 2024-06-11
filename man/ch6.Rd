@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{ch6}}{
 
-A list with 41 data vectors
+A list with 39 data vectors
 }
 }
 \source{
@@ -25,8 +25,6 @@ Data used in Chapter 6 of "Applied Nonparametric Statistical Methods" (5th editi
 \item groupB.sch2 (used in example 6.4)
 \item groupA.sch2.grp (used in example 6.5)
 \item groupB.sch2.grp (used in example 6.5)
-\item McGamma (used in example 6.6)
-\item McBeta (used in example 6.6)
 \item males (used in examples 6.7, 6.8)
 \item females (used in examples 6.7, 6.8)
 \item sampleI (used in example 6.9)
