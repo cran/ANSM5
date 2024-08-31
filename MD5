@@ -1,6 +1,6 @@
-c952d2ccc7e6e3deb1835015ee601f00 *DESCRIPTION
+17c625a82216707f798bc57409e1ecc2 *DESCRIPTION
 b1ce2403d9a0258f36e54516d8f70434 *NAMESPACE
-43db66c2084a1938e4b1c3de3deec095 *NEWS.md
+f828ca3537c9ebb9c7443bc011ae5164 *NEWS.md
 f35b3742216568df3b4b013ab70fc5f4 *R/ansari.bradley.R
 1b0849dea24932e669feca3d49e6cdc2 *R/binom.R
 7dd8f8a005082306753b390f581089fd *R/blomqvist.R
@@ -56,7 +56,7 @@ d3acb9f2bb624845a37836e310785fb0 *R/sgn.test.R
 dbcedfde78ffe50038760c654736574a *R/spearman.R
 2888a2a4e6a7f2d2ef40eef5e9ecd3bd *R/spearman.beta.R
 85ace6328210c3d42e6b917895f3a42b *R/theil.kendall.R
-67738301e8ea76d30b2258e702317a23 *R/wilcoxon.mann.whitney.R
+4b7aa2905dc237d6ebbb489618dc4308 *R/wilcoxon.mann.whitney.R
 b7cdfaba81712882a4499c797a6d2992 *R/wilcoxon.signedrank.R
 c82930ee7ec63b7cf4af0375e34a09a7 *R/zelen.R
 1ebceb9b5b6449ba6d42a1694bd54288 *README.md

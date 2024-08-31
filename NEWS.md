@@ -1,3 +1,7 @@
+# ANSM5 1.1.1
+
+* Patches due to debugging wilcoxon.mann.whitney() function
+
 # ANSM5 1.1.0
 
 * Changes due to using a better arrangement of datasets

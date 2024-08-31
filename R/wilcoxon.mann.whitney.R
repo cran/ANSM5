@@ -152,23 +152,15 @@ wilcoxon.mann.whitney <-
         if (length(x) < length(y) && alternative == "less"){
           pval.exact.less <-
             sum(permsums[1:ranksum]) / sum(permsums)
-          pval.exact.greater <-
-            sum(permsums[ranksum:length(permsums)]) / sum(permsums)
         }else if (length(x) < length(y) && alternative == "greater"){
-          pval.exact.less <-
-            sum(permsums[ranksum:length(permsums)]) / sum(permsums)
           pval.exact.greater <-
-            sum(permsums[1:ranksum]) / sum(permsums)
+            sum(permsums[ranksum:length(permsums)]) / sum(permsums)
         }else if (length(x) >= length(y) && alternative == "less"){
           pval.exact.less <-
             sum(permsums[ranksum:length(permsums)]) / sum(permsums)
-          pval.exact.greater <-
-            sum(permsums[1:ranksum]) / sum(permsums)
         }else if (length(x) >= length(y) && alternative == "greater"){
-          pval.exact.less <-
-            sum(permsums[1:ranksum]) / sum(permsums)
           pval.exact.greater <-
-            sum(permsums[ranksum:length(permsums)]) / sum(permsums)
+            sum(permsums[1:ranksum]) / sum(permsums)
         }else{
           pval.exact.less <-
             sum(permsums[1:ranksum]) / sum(permsums)
@@ -210,48 +202,34 @@ wilcoxon.mann.whitney <-
     }
 
     #Monte Carlo p-value
-    if(do.mc | (do.exact && do.CI && is.null(CI.exact.lower))){
+    if(do.mc){
       pval.mc.stat <- stat
-      stat.mc.1 <- wilcox.test(x, y, exact = FALSE, correct = cont.corr,
-                              conf.int = FALSE)$statistic
-      stat.mc.2 <- wilcox.test(y, x, exact = FALSE, correct = cont.corr,
-                              conf.int = FALSE)$statistic
-      stat.mc <- min(stat.mc.1, stat.mc.2)
-      if (stat.mc.1 < stat.mc.2){
-        xy.order <- "xy"
-      }else{
-        xy.order <- "yx"
-      }
+      stat.mc <- wilcox.test(x, y, exact = FALSE, correct = cont.corr,
+                             conf.int = FALSE)$statistic
       if (!is.null(seed)){set.seed(seed)}
-      pval.mc <- 0
+      pval.lt <- 0
+      pval.gt <- 0
       for (i in 1:nsims.mc){
         xy.tmp <- sample(n, n, replace = FALSE)
         x.tmp <- xy[xy.tmp[1:n.x]]
         y.tmp <- xy[xy.tmp[(n.x + 1):n]]
-        if (xy.order == "xy"){
-          stat.tmp <-
-            wilcox.test(x.tmp, y.tmp, exact = FALSE,  correct = cont.corr,
-                        conf.int = FALSE)$statistic
-        }else{
-          stat.tmp <-
-            wilcox.test(y.tmp, x.tmp, exact = FALSE,  correct = cont.corr,
-                        conf.int = FALSE)$statistic
+        stat.tmp <-
+          wilcox.test(x.tmp, y.tmp, exact = FALSE, correct = cont.corr,
+                      conf.int = FALSE)$statistic
+        if (stat.tmp <= stat.mc){
+          pval.lt <- pval.lt + 1 / nsims.mc
         }
-        if (alternative == "two.sided"){
-          if (stat.tmp <= stat.mc){
-            pval.mc <- pval.mc + 2 / nsims.mc
-          }
-        }else if (alternative == "less"){
-          if (stat.tmp <= stat.mc){
-            pval.mc <- pval.mc + 1 / nsims.mc
-          }
-        }else if (alternative == "greater"){
-          if (stat.tmp >= stat.mc){
-            pval.mc <- pval.mc + 1 / nsims.mc
-          }
+        if (stat.tmp >= stat.mc){
+          pval.gt <- pval.gt + 1 / nsims.mc
         }
       }
-      if (pval.mc > 1) {pval.mc <- 1}
+      if (alternative == "two.sided"){
+        pval.mc <- min(1, min(pval.lt, pval.gt) * 2)
+      }else if (alternative == "less"){
+        pval.mc <- pval.lt
+      }else if (alternative == "greater"){
+        pval.mc <- pval.gt
+      }
     }
 
     #Bootstrap CI
